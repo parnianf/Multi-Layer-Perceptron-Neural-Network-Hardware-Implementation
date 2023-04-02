@@ -1,0 +1,113 @@
+{C:/Users/Parnian/Desktop/ELEARN/CAD/Final Project/Code/acc71/Delivery/trunk/src/hdl/PU.v} {1 {vlog -work work {C:/Users/Parnian/Desktop/ELEARN/CAD/Final Project/Code/acc71/Delivery/trunk/src/hdl/PU.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module PU
+
+Top level modules:
+	PU
+
+} {} {}} {C:/Users/Parnian/Desktop/ELEARN/CAD/Final Project/Code/acc71/Delivery/trunk/src/hdl/Datapath.v} {1 {vlog -work work {C:/Users/Parnian/Desktop/ELEARN/CAD/Final Project/Code/acc71/Delivery/trunk/src/hdl/Datapath.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Datapath
+
+Top level modules:
+	Datapath
+
+} {} {}} {C:/Users/Parnian/Desktop/ELEARN/CAD/Final Project/Code/acc71/Delivery/trunk/src/hdl/Activation_function.v} {1 {vlog -work work {C:/Users/Parnian/Desktop/ELEARN/CAD/Final Project/Code/acc71/Delivery/trunk/src/hdl/Activation_function.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ActivationFunction
+
+Top level modules:
+	ActivationFunction
+
+} {} {}} {C:/Users/Parnian/Desktop/ELEARN/CAD/Final Project/Code/acc71/Delivery/trunk/src/hdl/PU_Controller.v} {1 {vlog -work work {C:/Users/Parnian/Desktop/ELEARN/CAD/Final Project/Code/acc71/Delivery/trunk/src/hdl/PU_Controller.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module PU_Controller
+
+Top level modules:
+	PU_Controller
+
+} {} {}} {C:/Users/Parnian/Desktop/ELEARN/CAD/Final Project/Code/acc71/Delivery/trunk/src/hdl/AdderTree.v} {1 {vlog -work work {C:/Users/Parnian/Desktop/ELEARN/CAD/Final Project/Code/acc71/Delivery/trunk/src/hdl/AdderTree.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module AdderTree
+
+Top level modules:
+	AdderTree
+
+} {} {}} {C:/Users/Parnian/Desktop/ELEARN/CAD/Final Project/Code/acc71/Delivery/trunk/src/hdl/Counter.v} {1 {vlog -work work {C:/Users/Parnian/Desktop/ELEARN/CAD/Final Project/Code/acc71/Delivery/trunk/src/hdl/Counter.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Counter
+
+Top level modules:
+	Counter
+
+} {} {}} {C:/Users/Parnian/Desktop/ELEARN/CAD/Final Project/Code/acc71/Delivery/trunk/src/hdl/Label.v} {1 {vlog -work work {C:/Users/Parnian/Desktop/ELEARN/CAD/Final Project/Code/acc71/Delivery/trunk/src/hdl/Label.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Label
+
+Top level modules:
+	Label
+
+} {} {}} {C:/Users/Parnian/Desktop/ELEARN/CAD/Final Project/Code/acc71/Delivery/trunk/src/hdl/Neural_network.v} {1 {vlog -work work {C:/Users/Parnian/Desktop/ELEARN/CAD/Final Project/Code/acc71/Delivery/trunk/src/hdl/Neural_network.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Neural_network
+
+Top level modules:
+	Neural_network
+
+} {} {}} {C:/Users/Parnian/Desktop/ELEARN/CAD/Final Project/Code/acc71/Delivery/trunk/src/hdl/Register.v} {1 {vlog -work work {C:/Users/Parnian/Desktop/ELEARN/CAD/Final Project/Code/acc71/Delivery/trunk/src/hdl/Register.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Register
+
+Top level modules:
+	Register
+
+} {} {}} {C:/Users/Parnian/Desktop/ELEARN/CAD/Final Project/Code/acc71/Delivery/trunk/src/hdl/Get_PU_Inputs.v} {1 {vlog -work work {C:/Users/Parnian/Desktop/ELEARN/CAD/Final Project/Code/acc71/Delivery/trunk/src/hdl/Get_PU_Inputs.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module get_PU_inputs
+
+Top level modules:
+	get_PU_inputs
+
+} {} {}} {C:/Users/Parnian/Desktop/ELEARN/CAD/Final Project/Code/acc71/Delivery/trunk/src/hdl/Multiplier.v} {1 {vlog -work work {C:/Users/Parnian/Desktop/ELEARN/CAD/Final Project/Code/acc71/Delivery/trunk/src/hdl/Multiplier.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Multiplier
+
+Top level modules:
+	Multiplier
+
+} {} {}} {C:/Users/Parnian/Desktop/ELEARN/CAD/Final Project/Code/acc71/Delivery/trunk/src/hdl/Accumulator.v} {1 {vlog -work work {C:/Users/Parnian/Desktop/ELEARN/CAD/Final Project/Code/acc71/Delivery/trunk/src/hdl/Accumulator.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Accumulator
+
+Top level modules:
+	Accumulator
+
+} {} {}} {C:/Users/Parnian/Desktop/ELEARN/CAD/Final Project/Code/acc71/Delivery/trunk/src/hdl/Adder.v} {1 {vlog -work work {C:/Users/Parnian/Desktop/ELEARN/CAD/Final Project/Code/acc71/Delivery/trunk/src/hdl/Adder.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Adder
+
+Top level modules:
+	Adder
+
+} {} {}} {C:/Users/Parnian/Desktop/ELEARN/CAD/Final Project/Code/acc71/Delivery/trunk/sim/tb/Neural_network_TB.v} {1 {vlog -work work {C:/Users/Parnian/Desktop/ELEARN/CAD/Final Project/Code/acc71/Delivery/trunk/sim/tb/Neural_network_TB.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Neural_network_TB
+
+Top level modules:
+	Neural_network_TB
+
+} {} {}} {C:/Users/Parnian/Desktop/ELEARN/CAD/Final Project/Code/acc71/Delivery/trunk/src/hdl/Test_data_split.v} {1 {vlog -work work {C:/Users/Parnian/Desktop/ELEARN/CAD/Final Project/Code/acc71/Delivery/trunk/src/hdl/Test_data_split.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Test_data_split
+
+Top level modules:
+	Test_data_split
+
+} {} {}} {C:/Users/Parnian/Desktop/ELEARN/CAD/Final Project/Code/acc71/Delivery/trunk/src/hdl/Controller.v} {1 {vlog -work work {C:/Users/Parnian/Desktop/ELEARN/CAD/Final Project/Code/acc71/Delivery/trunk/src/hdl/Controller.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Controller
+
+Top level modules:
+	Controller
+
+} {} {}}

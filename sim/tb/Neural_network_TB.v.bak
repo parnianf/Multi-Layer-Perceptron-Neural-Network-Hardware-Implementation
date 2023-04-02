@@ -1,0 +1,29 @@
+`timescale 1ns/1ns
+
+module Neural_network_TB();
+  reg clk=1'b0, rst=1'b1, start=1'b0;
+  integer test_count = 0, accepted_tests = 0;
+  wire[3:0] mnist_class;
+	wire single_test_done, done;
+	reg[7:0] labels [0:749];
+	
+  always @(single_test_done) begin
+    if(single_test_done) begin
+      if (labels[test_count] == mnist_class)
+        accepted_tests = accepted_tests + 1;
+      test_count = test_count + 1;
+    end
+  end
+	
+	Neural_network CUT(clk, rst, start, mnist_class, single_test_done, done);
+	
+	always #20 clk = ~clk;
+	initial begin
+    $readmemh("/file/te_lable_sm.dat", labels);
+    #40 rst = 1'b0;
+    #80 start = 1'b1;
+    #40 start = 1'b0;
+    #10000000 $monitor("--> Accuracy: %d%%", 100 * accepted_tests / test_count );
+    #50 $stop;
+  end
+endmodule
