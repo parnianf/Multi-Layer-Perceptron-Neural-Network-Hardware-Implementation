@@ -1,0 +1,29 @@
+`timescale 1ns/1ns
+
+module PU_Datapath(input clk, rst, ld, acc_rst, read_data_reg_ld, input[62*8-1:0] inputs_neuron, weights_neuron, input[7:0] bias, 
+                input[3:0] round, input mult_done, output[7:0] out);
+  wire[14:0] mult_out[7:0];
+  wire[14:0] mult_reg_in[7:0];
+  wire[63:0] inp_pu, weight_pu;
+  wire[20:0] adder_tree_out, reg_in, reg_out, adder_out;
+  wire[14:0] bias_out;
+  wire[62*8-1:0] inputs, weights;
+  
+  Register #(62*8) inp_reg(clk, rst, read_data_reg_ld, inputs_neuron, inputs);
+  Register #(62*8) weight_reg(clk, rst, read_data_reg_ld, weights_neuron, weights);
+  
+  get_PU_inputs pu_inps(inputs, weights, round, inp_pu, weight_pu);
+  genvar i;
+  generate
+    for(i = 0; i < 8; i = i + 1) begin: mults
+      Multiplier mult (inp_pu[(i + 1) * 8 - 1: i * 8], weight_pu[(i + 1) *  8 - 1: i * 8], mult_out[i]);
+    end
+  endgenerate
+  
+  AdderTree adder_tree(mult_out[7], mult_out[6], mult_out[5], mult_out[4], mult_out[3], mult_out[2], mult_out[1], mult_out[0], adder_tree_out);
+  Multiplier bias_mult(bias, 8'b01111111, bias_out);
+  Adder adder(adder_tree_out, {bias_out[14], 6'd0, bias_out[13:0]}, adder_out);
+  assign reg_in = mult_done ? adder_out : adder_tree_out;
+  Accumulator acc(clk, acc_rst, ld, reg_in, reg_out);
+  ActivationFunction act_func({reg_out[20], 9'd0, reg_out[19:9]}, out);
+endmodule

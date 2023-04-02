@@ -1,0 +1,13 @@
+`timescale 1ns / 1ns
+module Test_data_split(input[9:0] test_index, output reg[495:0] out);
+  reg[7:0] all_test_data [0:46499];
+  integer i;
+  initial begin
+    $readmemh("../sim/file/te_data_sm.dat", all_test_data);
+  end
+  always @(*) begin
+    for(i = 0; i < 62; i = i + 1) begin
+      out[8 * i +: 8] = all_test_data[i + (test_index * 62)];
+    end
+  end
+endmodule
