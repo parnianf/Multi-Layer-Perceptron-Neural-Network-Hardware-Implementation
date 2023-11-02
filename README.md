@@ -17,24 +17,6 @@ In this project, you have to design and implement a simple MLP neural network in
 
 The MLP in this project has 62 inputs in the input layer, 10 output neurons in the output layer, and also one hidden layer with 30 neurons is considered for this issue. In both layers of our MLP model for `MNIST` classification, the `ReLU` function is considered as an activation function.
 
-<p align="center">
-  <br/>
-    <img src="img/PU_Datapath.png" height="300" />
-    <img src="img/PU_Controller.png" height="300" />
-  <br/>
-  <em>&emsp;&emsp;&emsp;&emsp;&emsp; Fig. 2. PU Datapath    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  &emsp;&emsp;&emsp;&emsp;&emsp; Fig. 3. PU Controller</em>
-</p>
-
-
-<p align="center">
-  <br/>
-    <img src="img/NN_Datapath.png" height="300" />
-    <img src="img/NN_Controller.png" height="250" />
-  <br/>
-  <em>Fig. 4. Neural Nertwork Datapath    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;  Fig. 5. Neural Nertwork Controller</em>
-</p>
-
-
 ## Result
 <p align="center">
   <br/>
